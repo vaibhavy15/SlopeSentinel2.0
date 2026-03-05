@@ -1,0 +1,60 @@
+<div class="upload-page">
+
+<div class="upload-zone"
+id="uploadZone"
+onclick="document.getElementById('fileInput').click()"
+ondragover="dragOver(event)"
+ondragleave="dragLeave(event)"
+ondrop="dropFile(event)">
+
+<h3>Upload Mine CSV Data</h3>
+
+<p>Drop CSV file here</p>
+
+<input type="file"
+id="fileInput"
+accept=".csv"
+style="display:none"
+onchange="handleFile(this)">
+
+</div>
+
+<div class="progress-area"
+id="progressArea">
+
+<p>Processing <span id="filename"></span></p>
+
+<div class="progress-bar"
+id="progressBar"></div>
+
+</div>
+
+<div class="results-table"
+id="resultsTable">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Site</th>
+<th>Angle</th>
+<th>Rainfall</th>
+<th>Density</th>
+<th>Score</th>
+<th>Prediction</th>
+
+</tr>
+
+</thead>
+
+<tbody id="resultsBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>

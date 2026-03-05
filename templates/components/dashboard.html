@@ -1,0 +1,136 @@
+<div class="dash-layout">
+
+<aside class="sidebar">
+
+<div class="sidebar-top">
+
+<div class="sidebar-brand">
+
+<div class="logo-icon">⛰</div>
+
+SlopeSentinel
+
+</div>
+
+</div>
+
+<nav class="sidebar-nav">
+
+<div class="nav-item active"
+onclick="switchPage('overview',this)">
+Overview
+</div>
+
+<div class="nav-item"
+onclick="switchPage('map',this)">
+Mine Map
+</div>
+
+<div class="nav-item"
+onclick="switchPage('upload',this)">
+Upload Data
+</div>
+
+<div class="nav-item"
+onclick="switchPage('alerts',this)">
+Alerts
+</div>
+
+</nav>
+
+<div class="sidebar-bottom">
+
+<div class="user-row">
+
+<div class="user-avatar">JE</div>
+
+<div class="user-info">
+
+<div class="user-name">Engineer</div>
+
+<div class="user-role">User</div>
+
+</div>
+
+</div>
+
+<button class="btn-logout"
+onclick="showLanding()">
+Sign Out
+</button>
+
+</div>
+
+</aside>
+
+<main class="main-panel">
+
+<div class="page active" id="page-overview">
+
+<div class="stats-row">
+
+<div class="stat-card">
+
+<span class="stat-label">Active Sensors</span>
+
+<div class="stat-value">124</div>
+
+</div>
+
+<div class="stat-card">
+
+<span class="stat-label">Mine Sites</span>
+
+<div class="stat-value">12</div>
+
+</div>
+
+<div class="stat-card">
+
+<span class="stat-label">Safe Zones</span>
+
+<div class="stat-value">88%</div>
+
+</div>
+
+<div class="stat-card">
+
+<span class="stat-label">Critical Alerts</span>
+
+<div class="stat-value">3</div>
+
+</div>
+
+</div>
+
+<div class="charts-row">
+
+<div class="chart-card">
+
+<h3>Monthly Predictions</h3>
+
+<canvas id="lineChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h3>Risk Distribution</h3>
+
+<canvas id="donutChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="page" id="page-map"></div>
+
+<div class="page" id="page-upload"></div>
+
+<div class="page" id="page-alerts"></div>
+
+</main>
+
+</div>

@@ -1,0 +1,46 @@
+<div class="map-layout">
+
+<div class="map-canvas">
+
+<svg viewBox="0 0 700 420">
+
+<circle cx="200" cy="150" r="10" fill="green"
+onclick="selectSite('North Pit','safe','45.2','-73.8','85','12','Stable')"/>
+
+<circle cx="400" cy="200" r="10" fill="orange"
+onclick="selectSite('Central Pit','caution','45.3','-73.6','60','20','Watch')"/>
+
+<circle cx="600" cy="300" r="10" fill="red"
+onclick="selectSite('East Pit','critical','45.4','-73.5','30','40','Danger')"/>
+
+</svg>
+
+</div>
+
+<div class="site-panel">
+
+<h3>Site Analysis</h3>
+
+<div id="no-site-msg">
+No site selected
+</div>
+
+<div class="site-detail" id="site-detail-panel">
+
+<div id="sd-name"></div>
+
+<div id="sd-badge" class="risk-badge"></div>
+
+<div id="sd-coords"></div>
+
+<div>Safe Score: <span id="sd-safe"></span></div>
+
+<div>Risk Index: <span id="sd-risk"></span></div>
+
+<div>Stability: <span id="sd-stab"></span></div>
+
+</div>
+
+</div>
+
+</div>
